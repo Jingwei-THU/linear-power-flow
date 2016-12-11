@@ -1,5 +1,5 @@
 function mpc = case33
-%CASE9    Power flow data for 33 node distribution system.
+%   Power flow data for 33 node distribution system.
 %   Please see CASEFORMAT for details on the case file format.
 %   Vn = 12.66 kV. Sn = 100 MVA 
 %   Obtained from: M. E. Baran and F. F. Wu, "Network Reconfiguration in Distribution Systems for Loss Reduction 
@@ -89,12 +89,16 @@ mpc.branch = [
 31	32	0.3105	0.3619	0	0.50	0.50	0.50	0	0	1	-360	360
 32	33	0.3410	0.5302	0	0.10	0.10	0.10	0	0	1	-360	360
 
+% For a radial topology, the following tie-lines are breaked
+
 % 8	21	2.0000	2.0000	0	0.50	0.50	0.50	0	0	1	-360	360
 % 9	15	2.0000	2.0000	0	0.50	0.50	0.50	0	0	1	-360	360
 % 12	22	2.0000	2.0000	0	0.50	0.50	0.50	0	0	1	-360	360
 % 18	33	0.5000	0.5000	0	0.50	0.50	0.50	0	0	1	-360	360
 % 25	29	0.5000	0.5000	0	0.10	0.10	0.10	0	0	1	-360	360
-];mpc.branch(:,3:4) = mpc.branch(:,3:4)./(12.66^2);
+];
+
+mpc.branch(:,3:4) = mpc.branch(:,3:4)./(12.66^2);
 
 %%-----  OPF Data  -----%%
 %% generator cost data
