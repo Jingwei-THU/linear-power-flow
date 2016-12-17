@@ -2,7 +2,7 @@
 
 This code generates the Decoupled Linearized Power Flow (DLPF) and Fast DLPF (FDLPF) model which consider voltage magnitude and reactive power compared to the classical DC power flow model.
 
-The model is proposed in paper: Jingwei Yang, Ning Zhang, Chongqing Kang, Qing Xia,"A State-Independent Linear Power Flow Model with Accurate Estimation of Voltage Magnitude", published on IEEE Transactions on Power Systems, DOI:10.1109/TPWRS.2016.2638923
+The model is proposed in paper: Jingwei Yang, Ning Zhang, Chongqing Kang, Qing Xia,"A State-Independent Linear Power Flow Model with Accurate Estimation of Voltage Magnitude", published on IEEE Transactions on Power Systems, DOI:10.1109/TPWRS.2016.2638923, available at https://www.researchgate.net/publication/311612044_A_State-Independent_Linear_Power_Flow_Model_with_Accurate_Estimation_of_Voltage_Magnitude
 
 This source code is distributed in the hope that it will be helpful for your research and personal use. Any commercial/business use should be agreed by the authors of the above mentioned paper.
 
